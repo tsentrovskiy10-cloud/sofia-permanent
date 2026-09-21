@@ -113,6 +113,15 @@
   .hero-below h1 em{color:var(--accent-dark);font-style:italic;}
   .hero-below p{color:var(--ink-soft);max-width:560px;margin:0 auto 32px;font-size:17px;}
   .hero-below .cta-pair{justify-content:center;margin-bottom:36px;}
+  /* TEMP-PROMO */
+  .promo-banner{display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 14px;margin:0 auto 26px;padding:10px 12px 10px 10px;background:var(--white);border:1px solid var(--accent-soft);border-radius:100px;box-shadow:0 10px 30px -14px rgba(124,97,66,0.45);font-size:14.5px;}
+  .promo-flag{background:var(--accent-dark);color:#fff;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:100px;}
+  .promo-text{color:var(--ink);font-weight:600;}
+  .promo-text strong{color:var(--accent-dark);font-weight:800;}
+  .promo-text s{color:var(--ink-faint);margin-left:4px;}
+  .promo-link{color:var(--accent-dark);font-weight:800;padding:6px 10px;}
+  .promo-link:hover{text-decoration:underline;}
+  @media (max-width:600px){.promo-banner{border-radius:22px;padding:12px 14px;flex-direction:column;gap:8px;width:100%;}}
   .trust-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
   .chip{
     background:var(--white);border:1px solid var(--line);border-radius:100px;
@@ -318,6 +327,13 @@
 <div class="hero">
   <div class="hero-media"><img src="img/cover.jpg" alt="Студия перманентного макияжа Софии Центровской"></div>
   <div class="container hero-below">
+    <!-- TEMP-PROMO: удалить этот блок, когда акция закончится -->
+    <div class="promo-banner">
+      <span class="promo-flag">Осталось 1 место</span>
+      <span class="promo-text">Модель на перманент бровей — <strong>5&nbsp;000&nbsp;₽</strong> <s>8&nbsp;000&nbsp;₽</s></span>
+      <a class="promo-link" href="https://t.me/sofitskas" target="_blank" rel="noopener">Занять место →</a>
+    </div>
+    <!-- /TEMP-PROMO -->
     <div class="kicker" style="justify-content:center;">Ивантеевка · Пушкино</div>
     <h1>Брови и взгляд, которым <em>не нужен</em> ежедневный макияж</h1>
     <p>Индивидуальный подбор формы, деликатная техника и минеральные пигменты — результат выглядит естественно и держится долго.</p>
@@ -397,13 +413,13 @@
 
       <div class="svc-card reveal">
         <div class="svc-photo">
-          <div class="svc-badge">Акция · 3 места</div>
+          <div class="svc-badge">Акция · осталось 1 место</div><!-- TEMP-PROMO -->
           <img src="img/svc-brows-promo.jpg" alt="Акция для моделей — перманент бровей">
         </div>
         <div class="svc-body">
           <div class="svc-price">5 000 ₽ <span class="old">8 000 ₽</span></div>
           <h3>Для моделей: перманент бровей</h3>
-          <p>Набираю 3 модели по сниженной цене — та же технология и внимание к результату, что и на полной стоимости. Мест немного.</p>
+          <p>Из трёх мест по сниженной цене свободно последнее — та же технология и внимание к результату, что и на полной стоимости.</p><!-- TEMP-PROMO -->
           <div class="svc-cta">
             <a class="btn btn-tg" href="https://t.me/sofitskas" target="_blank" rel="noopener">Telegram</a>
             <a class="btn btn-vk" href="https://vk.ru/gim241570360" target="_blank" rel="noopener">ВКонтакте</a>
